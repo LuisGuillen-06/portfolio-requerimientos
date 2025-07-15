@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LuisGuillen-06/portfolio-requerimientos.git/static/css/main.025d2043.css",
+    "main.js": "/LuisGuillen-06/portfolio-requerimientos.git/static/js/main.872ff065.js",
+    "static/js/453.42c6db40.chunk.js": "/LuisGuillen-06/portfolio-requerimientos.git/static/js/453.42c6db40.chunk.js",
+    "static/media/Photo.jpg": "/LuisGuillen-06/portfolio-requerimientos.git/static/media/Photo.2c99f7d0c55b89d65355.jpg",
+    "index.html": "/LuisGuillen-06/portfolio-requerimientos.git/index.html",
+    "main.025d2043.css.map": "/LuisGuillen-06/portfolio-requerimientos.git/static/css/main.025d2043.css.map",
+    "main.872ff065.js.map": "/LuisGuillen-06/portfolio-requerimientos.git/static/js/main.872ff065.js.map",
+    "453.42c6db40.chunk.js.map": "/LuisGuillen-06/portfolio-requerimientos.git/static/js/453.42c6db40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.025d2043.css",
+    "static/js/main.872ff065.js"
+  ]
+}
