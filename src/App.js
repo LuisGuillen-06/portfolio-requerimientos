@@ -14,34 +14,34 @@ function App() {
     <div className="App">
       <MouseGradient />
 
-      {/* Encabezado con navegación */}
+      
       <header>
         <NavBar />
       </header>
 
-      {/* Contenido principal */}
+      
       <main>
-        {/* Sección principal tipo presentación */}
+        
         <div id="Hero" className='Hero'>
           <Hero />
         </div>
 
-        {/* Sobre mí */}
+        
         <section id="About" aria-label="Sobre mí" className="about-section">
           <About />
         </section>
 
-        {/* Proyectos */}
+        
         <section id="Projects" className="project">
           <Projects />
         </section>
 
-        {/* Habilidades */}
+        
         <section id="Skills" aria-label="Habilidades">
           <Skills />
         </section>
 
-        {/* Contacto (antes estaba en un aside) */}
+        
         <section id="Contact" aria-label="Contacto">
           <Contact />
         </section>
