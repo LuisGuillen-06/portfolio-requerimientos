@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const sections = [
   { id: 'Hero', label: 'Home', icon: 'house' },
   { id: 'About', label: 'About me', icon: 'user' },
-  { id: 'Projects', label: 'Projects', icon: 'laptop-code' },
-  { id: 'Skills', label: 'Skills', icon: 'code' },
   { id: 'Contact', label: 'Contact', icon: 'envelope' }
 ];
 
@@ -14,6 +13,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +36,26 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // 👇 Función que asegura volver al home y hacer scroll
+  const handleSectionClick = (id) => {
+    setMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Esperamos a que Home cargue y luego hacemos scroll
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 300); // Tiempo para asegurar que se renderizó
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <h1 className="logo">LuisF.Dev</h1>
@@ -46,16 +67,26 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         {sections.map(({ id, label, icon }) => (
           <li key={id}>
-            <a
-              href={`#${id}`}
-              className={activeSection === id ? 'active' : ''}
+            <button
+               className={`nav-link nav-btn ${activeSection === id ? 'active' : ''}`}
               title={label}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => handleSectionClick(id)}
             >
               <FontAwesomeIcon icon={['fas', icon]} className="nav-icon" />
-            </a>
+            </button>
           </li>
         ))}
+
+        <li>
+          <Link
+            to="/requerimientos"
+            className="nav-link"
+            title="Ingeniería de Requerimientos"
+            onClick={() => setMenuOpen(false)}
+          >
+            <FontAwesomeIcon icon={['fas', 'laptop-code']} className="nav-icon" />
+          </Link>
+        </li>
       </ul>
     </nav>
   );

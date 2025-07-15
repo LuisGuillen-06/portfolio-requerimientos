@@ -46,6 +46,28 @@
   transform: scale(1.15);
 }
 
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.3rem;
+  position: relative;
+  transition: transform 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+  color: #bb86fc;
+  filter: drop-shadow(0 0 4px #bb86fc);
+}
+
+.nav-link.active .nav-icon {
+  color: #bb86fc;
+  filter: drop-shadow(0 0 4px #bb86fcaa);
+}
+
 .nav-links {
 
   display: flex;
@@ -53,6 +75,7 @@
   gap: 2rem;
   list-style: none;
   transition: all 0.3s ease;
+  transform: scale(1.15);
 }
 
 .navbar a {
@@ -94,6 +117,18 @@
   cursor: pointer;
   gap: 4px;
 }
+
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #bb86fc;
+  text-shadow: 0 0 8px #bb86fc77;
+  transition: transform 0.3s ease; 
+}
+
+
 
 .bar {
   height: 3px;
