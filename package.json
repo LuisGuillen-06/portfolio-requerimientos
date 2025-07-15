@@ -2,7 +2,7 @@
   "name": "portfolio-luis",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/LuisGuillen-06/portfolio-requerimientos.git",
+  "homepage": "https://LuisGuillen-06.github.io/portfolio-requerimientos",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
