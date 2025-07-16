@@ -1,7 +1,8 @@
 import React from 'react';
 import './Hero.css';
-
 import { imagenes } from '../assets/multimedia';
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <a href="#Projects" className="btn btn-primary">Ver Proyectos</a>
+            <Link to="/requerimientos" className="btn btn-primary">Ver Proyectos</Link>
             <a href="#Contact" className="btn btn-outline">Contactame</a>
           </div>
         </div>
