@@ -1,6 +1,59 @@
 import React from 'react';
-import NavBar from '../components/NavBar'; // Asegurate que la ruta sea correcta
-import './Requerimientos.css'; // Opcional: para estilizar esta vista si querés
+import NavBar from '../components/NavBar';
+import UnidadCard from '../components/UnidadCard';
+import './Requerimientos.css';
+import { imagenes } from '../assets/multimedia';
+
+// ⬅️ Definí el array afuera del return
+const unidades = [
+  {
+    titulo: "Unidad 1: Introducción",
+    imagen: imagenes.unidad1,
+    contenido: (
+      <>
+        <p>📄 TP1, TP2</p>
+      </>
+    )
+  },
+  {
+    titulo: "Unidad 2: Requisitos Funcionales",
+    imagen: imagenes.unidad2,
+    contenido: (
+      <>
+        <p>🎯 Actividades y simulación</p>
+        <a href="/simulacion">🔗 Ver simulación</a>
+      </>
+    )
+  },
+   {
+    titulo: "Unidad 1: Introducción",
+    imagen: imagenes.unidad1,
+    contenido: (
+      <>
+        <p>📄 TP1, TP2</p>
+      </>
+    )
+  },
+   {
+    titulo: "Unidad 1: Introducción",
+    imagen: imagenes.unidad1,
+    contenido: (
+      <>
+        <p>📄 TP1, TP2</p>
+      </>
+    )
+  },
+   {
+    titulo: "Unidad 1: Introducción",
+    imagen: imagenes.unidad1,
+    contenido: (
+      <>
+        <p>📄 TP1, TP2</p>
+      </>
+    )
+  }
+  // ➕ Agregá más unidades como quieras
+];
 
 const Requerimientos = () => {
   return (
@@ -13,7 +66,11 @@ const Requerimientos = () => {
           Bienvenido a la sección dedicada a los trabajos prácticos, investigaciones y actividades de la materia.
         </p>
 
-        {/* Aquí agregaremos las tarjetas por unidad temática */}
+        <div className="tarjetas-unidades">
+          {unidades.map((unidad, index) => (
+            <UnidadCard key={index} {...unidad} />
+          ))}
+        </div>
       </main>
 
       <footer>

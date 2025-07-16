@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
-import profilePic from '../assets/Photo.jpg'; // Asegurate que la ruta sea correcta
+
+import { imagenes } from '../assets/multimedia';
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-image">
-          <img src={profilePic} alt="Luis Felipe" />
+          <img src={imagenes.fotoPefil} alt="Luis Felipe" />
         </div>
       </div>
     </section>

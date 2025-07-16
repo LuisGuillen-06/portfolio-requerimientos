@@ -1,0 +1,82 @@
+.requerimientos-page {
+  padding-top: 80px; /* Espacio para que el Navbar no tape el contenido */
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.requerimientos-page h1 {
+    color: #bb86fc;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-shadow: 0 0 6px #bb86fc88;
+  font-size: 2.7rem;
+}
+
+.requerimientos-page p {
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+  color: #d9cece;
+}
+
+/* GRID de tarjetas */
+.tarjetas-unidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ⬅️ Siempre 2 por fila */
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+
+/* ESTILO INDIVIDUAL DE TARJETA */
+.unidad-card {
+  background: linear-gradient(135deg, #ffffff, #f2e6ff);
+  background-color: #fefefe;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(187, 134, 252, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px;
+  max-width: 600px;
+  cursor: pointer;
+  border: 2px solid #bb86fc33;
+}
+
+.unidad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(16, 15, 15, 0.545);
+}
+
+.unidad-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.unidad-card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.unidad-contenido {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+.unidad-contenido p {
+  margin: 0.5em 0;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .tarjetas-unidades {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
