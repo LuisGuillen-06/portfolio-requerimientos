@@ -30,15 +30,6 @@ const unidades = [
         Esta actividad consistió en completar un cuadro comparativo con otras industrias, mencionando además dos cualidades clave que debe poseer un software.
       </p>
       <p><FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#792aa9ff' }} />Podés ver el PDF completo de la actividad reazlizada a continuación:</p>
-
-      {/*<a
-        href="https://drive.google.com/file/d/1e2Joe4-JA9zARLPqMyN88MY_UNFoydDg/view?usp=drive_link"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="modal-button"
-      >
-        Ver Actividad (PDF)
-      </a>*/}
       <div className="pdf-container">
         <iframe
           src="https://drive.google.com/file/d/1e2Joe4-JA9zARLPqMyN88MY_UNFoydDg/preview"
@@ -116,7 +107,6 @@ const unidades = [
       </>
       
     ),
-    /*enlace: "/simulacion"*/
     
   },
    {
@@ -161,7 +151,8 @@ const unidades = [
       <h3><FontAwesomeIcon icon="tasks" style={{ marginRight: '8px', color: '#388e3c' }} />
         Actividad Grupal – Análisis de Metodologías de Desarrollo  y su Relación con la Ingeniería de Requerimientos</h3>
       <p>
-        Realizamos este trabajo en grupo con mis compañeros <strong>Lara Belaitx, Micaela Corbellini, Esteban Regueria, Luciana impollino y yo Luis Felipe Guillén Márquez</strong>, para analizar cómo distintas metodologías de desarrollo (tradicionales, ágiles y de madurez) abordan la Ingeniería de Requerimientos. A lo largo del video explicamos cómo se definen y gestionan los requerimientos en cada modelo, destacando herramientas, ventajas, desventajas y ejemplos.</p>
+        Realizamos este trabajo en grupo con mis compañeros, para analizar cómo distintas metodologías de desarrollo (tradicionales, ágiles y de madurez) abordan la Ingeniería de Requerimientos. A lo largo del video explicamos cómo se definen y gestionan los requerimientos en cada modelo, destacando herramientas, ventajas, desventajas y ejemplos.</p>
+      <p><strong>Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
 
       <p>🎥En el siguiente video vas a encontrar una presentación narrada que resume los principales puntos analizados.</p>
       <div className="flex justify-center my-6">
@@ -177,9 +168,118 @@ const unidades = [
       </>
       
     ),
-    /*enlace: "/simulacion"*/
     
-  }
+  },
+   {
+    titulo: "Clase 4 - Requerimientos e Ingeniería de Requerimientos",
+    imagen: imagenes.unidad4,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+        Perspectiva Organizacional, Elicitación y Análisis</h3>
+      
+      <p>
+        En esta clase profundizamos el rol de la Ingeniería de Requerimientos desde una mirada organizacional y técnica. Se abordó el concepto de elicitación, entendido como el proceso de obtención de necesidades desde el usuario hacia los modelos de software, destacando su naturaleza social, iterativa y no lineal.
+      </p>
+      <p><FontAwesomeIcon icon="lightbulb" style={{ marginRight: '8px', color: '#ff9800' }} />
+        Se analizó cómo los requerimientos son la base del desarrollo exitoso, permitiendo al sistema cumplir con objetivos, incluso cuando los usuarios no los tienen completamente claros desde el inicio. Se trabajó sobre la importancia de la especificación de requerimientos (SRS) y su expresión en formatos variados: desde lenguaje natural a estructuras formales.
+      </p>
+      <p>
+        <FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#1976d2' }} />
+        Además, se presentó el alcance de la Ingeniería de Requerimientos, su dimensión cognitiva y social, y su relación directa con actividades como la validación, documentación y análisis en contextos organizacionales cambiantes. Se discutió la diferencia entre requerimientos funcionales y no funcionales, y cómo ambos deben contemplarse para un diseño robusto.
+      </p>
+      <p>
+        Este conocimiento fue complementado con material audiovisual y gráficos explicativos que muestran la relación entre requerimientos, sistema y entorno, proporcionando una visión integral para el análisis en profundidad.
+      </p>
+      <hr></hr>
+      <h3><FontAwesomeIcon icon="tasks" style={{ marginRight: '8px', color: '#388e3c' }} />
+        Trabajo Práctico Grupal – Identificación de Requerimientos y Stakeholders</h3>
+      <p>
+        En este trabajo grupal analizamos el sistema de biblioteca de una Facultad de Informática, en el marco del estudio de la Ingeniería de Requerimientos. El objetivo fue aplicar conceptos de necesidades, deseos y expectativas, así como diferenciar entre requerimientos del usuario y del sistema. Además, identificamos a los principales <strong>stakeholders</strong> del sistema, considerando sus roles e intereses dentro del desarrollo.
+      </p>
+
+      <p>
+        Este ejercicio nos permitió aplicar de forma práctica los conocimientos adquiridos en la clase, y trabajar colaborativamente en la elaboración de ejemplos reales y contextualizados.
+      </p>
+
+      <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+      <p><FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#792aa9ff' }} />Podés ver el PDF completo de la actividad reazlizada a continuación:</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1BKrDnhGwuwpno1mJb970UWv1xVIDGi4V/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3><FontAwesomeIcon icon="tasks" style={{ marginRight: '8px', color: '#388e3c' }} />TP Cursada - Primera Entrega: Enunciado</h3>
+      <p>📚 Este trabajo fue realizado en grupo durante la cursada de la materia Ingeniería de Requerimientos. Se abordó el análisis, modelado y especificación de requisitos para un sistema de reservas orientado a espacios de coworking.</p>
+
+      <p>En esta primera entrega se trabajó sobre el dominio del problema, identificando el contexto inicial, los actores involucrados y los procesos que el sistema deberá cubrir.
+      Próximas entregas abordarán la identificación de stakeholders, sus motivaciones, las necesidades funcionales y no funcionales del sistema, y los requerimientos de usuario y sistema.</p>
+      <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+      <p>🖇️ Ver documento PDF con el detalle completo del enunciado del proyecto a continuación:</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/148UzKCp3yOpaxKxla6lwX8ft9JO_DUGp/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>
+      Debate de cierre de la Clase 4</h3>
+      <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+      <p>A partir del siguiente foro (de participación obligatoria) desarrollaremos entre todos una respuesta formal a la siguiente pregunta disparadora: <strong>¿Por qué cree que la Ingeniería de Requerimientos tiene un enfoque tan social?</strong></p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi participacion</h4>
+      <p>Tiene un enfoque social porque se basa en entender lo que necesitan las personas que van a usar el sistema, no es solo algo técnico, hay que hablar con los usuarios, interpretar lo que quieren decir y llegar a acuerdos, ya que aveces los requerimientos no están claros al principio, por eso es clave comunicarse bien y saber escuchar, sin esa parte social, es difícil que el sistema cumpla realmente con lo que se espera.</p>
+      <hr></hr>
+    </>
+    ),
+  },
+     {
+    titulo: "Clase 5 - Procesos de la Ingeniería de Requerimientos",
+    imagen: imagenes.unidad5,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+        Procesos Claves</h3>
+      
+      <p>
+        En esta clase analizamos los procesos clave que conforman la Ingeniería de Requerimientos: <strong>elicitación, especificación y validación</strong>. Aprendimos que tener un proceso claro nos permite tomar decisiones más acertadas, sobre todo cuando surgen imprevistos.
+      </p>
+      <p><FontAwesomeIcon icon="lightbulb" style={{ marginRight: '8px', color: '#ff9800' }} />
+        A través del modelo de Loucopoulos, entendimos cómo fluye la información entre estos procesos y la importancia de gestionar adecuadamente cada etapa. También exploramos otros modelos, como SWEBOK y BABOK, que incorporan subprocesos como la negociación y la comunicación de requerimientos, dándonos una visión más completa del análisis del negocio.
+      </p>
+      <p>
+        <FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#1976d2' }} />
+        Además, se contrastaron los enfoques tradicionales con las metodologías ágiles, donde los requerimientos se abordan de manera iterativa e incremental, reduciendo la documentación formal y poniendo foco en entregables funcionales. Estudiamos cómo una épica se transforma en historias de usuario y luego en tareas más detalladas.
+      </p>
+      <p>
+        Finalmente, se abordó el concepto de gestión de requerimientos, esencial para lidiar con el cambio constante y mantener la trazabilidad de lo que se necesita construir.
+      </p>
+      <p>🖇️Si desea ver información más detalladada sobre los temas mencionados, en el PDF siguiente se muestran con más profundidad.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1-B_2uysxuhYx178i2au0GbtBAqzBZpZz/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+
+      <hr></hr>
+    </>
+    ),
+  },
 ];
 
 
