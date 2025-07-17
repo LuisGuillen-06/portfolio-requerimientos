@@ -170,7 +170,7 @@ const unidades = [
     ),
     
   },
-   {
+  {
     titulo: "Clase 4 - Requerimientos e Ingeniería de Requerimientos",
     imagen: imagenes.unidad4,
     contenido: (
@@ -243,7 +243,7 @@ const unidades = [
     </>
     ),
   },
-     {
+  {
     titulo: "Clase 5 - Procesos de la Ingeniería de Requerimientos",
     imagen: imagenes.unidad5,
     contenido: (
@@ -280,6 +280,164 @@ const unidades = [
     </>
     ),
   },
+  {
+    titulo: "Clase 6 - Obtención de requerimientos | parte 1",
+    imagen: imagenes.unidad6,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+        Técnicas para la Obtención de Requerimientos</h3>
+      
+      <p>
+        En esta clase comenzamos a estudiar en profundidad el proceso de elicitación de requerimientos, entendida como la actividad de adquirir y obtener el conocimiento necesario para entender un dominio de problema. Este proceso es clave en la Ingeniería de Requerimientos, ya que sin una comprensión clara del dominio no es posible desarrollar un sistema consistente ni completo.
+      </p>
+      <p>
+        🔍 Se analizaron los problemas frecuentes en esta etapa: el conocimiento suele estar disperso, en conflicto o implícito, y muchas veces depende de expertos humanos que tienen dificultades para transmitirlo. También influyen factores como los sesgos de los usuarios, del analista y los cambios constantes en el entorno de negocio.
+      </p>
+      <p>🧠 A partir de esto, se abordaron distintas técnicas de elicitación, principalmente las propuestas por Loucopoulos, entre las que se encuentran:</p>
+
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Partir del usuario (entrevistas, encuestas, brainstorming)</p>
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Análisis de objetivos y metas</p>
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Escenarios</p>
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Análisis de formularios</p>
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Reutilización de requerimientos</p>
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Lenguaje natural</p>
+      <p><FontAwesomeIcon icon="circle-check" style={{ marginRight: '10px', color: '#2d4140ff' }} />Análisis de tareas</p>
+      <p>
+        📋 Se hizo foco en las entrevistas como una herramienta central para obtener información, explicando cómo deben planificarse, conducirse y validarse correctamente para que el conocimiento obtenido sea útil y confiable.
+      </p>
+      <hr></hr>
+      <h3><FontAwesomeIcon icon="tasks" style={{ marginRight: '8px', color: '#388e3c' }} />
+        Actividad Grupal – Ejercitación Práctica: Especificación de Requerimientos</h3>
+      <p>
+        En esta actividad grupal abordamos un ejercicio práctico orientado a la correcta especificación de requerimientos funcionales y no funcionales para el desarrollo de una aplicación móvil de una empresa de bicicletas compartidas. A partir de un caso planteado, se trabajó en la redacción formal de requerimientos, la detección y corrección de ambigüedades, y la elaboración de un mini glosario técnico, con el objetivo de aplicar buenas prácticas en Ingeniería de Requerimientos y fortalecer su vínculo con etapas posteriores del desarrollo de software.
+      </p>
+
+      <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+      <p><FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#792aa9ff' }} />Podés ver el PDF completo de la actividad reazlizada a continuación:</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/16UhZoNQbxzbWN3Ll0NDBwHw8_cLydVho/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>
+      Foro de debate de la clase 6</h3>
+      <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+      <p>Si tuviera que resolver un problema del cual dependiese mi vida y tengo 60 minutos para resolverlo, <strong>¿ como dedicaría el tiempo para resolverlo ?</strong>
+      <ol style={{marginLeft:"30px"}}>
+        <li>40 minutos para estudiarlo</li>
+        <li>15 minutos para revisarlo</li>
+        <li>5 minutos para solucionarlo</li>
+      </ol>
+      <strong>¿Por qué piensan que debería ser así?</strong> Lo debatiremos al final de la clase, en el foro propuesto.</p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi participacion</h4>
+      <p>Creo que sin dudas dedicaria la mayor parte del tiempo a entender bien de que se trata, la mayoria de las veces nos apuramos en encontrar una solucion sin tener claro el problema y eso suele llevar a errores o decisiones apresuradas, por eso usaria 40 minutos para analizarlo bien, tratar de ver todos los angulos posibles y entender realmente que esta en juego, despues me tomaria 15 minutos para repasar lo pensado y ver si no se me escapo algo o si hay una forma mejor de encararlo, luego cuando ya este seguro, usaria los ultimos 5 minutos para resolverlo, ya que aveces, en situaciones limites pensar con calma es lo que te puede salvar.</p>
+      <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 7 - Obtención de requerimientos | parte 2",
+    imagen: imagenes.unidad7,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+        Continuamos con técnicas para obtener requerimientos</h3>
+      
+      <p>
+        En esta clase seguimos viendo distintas formas de obtener requerimientos. Además de lo que ya vimos con Loucopoulos, se suman nuevas estrategias como analizar metas y objetivos, revisar formularios existentes, usar lenguaje natural, reusar requerimientos y analizar tareas. También se ven métodos grupales como prototipos, encuestas, brainstorming y casos de uso. Se toma material de otros autores como Young y Nuseibeh-Easterbrook, que aportan más herramientas útiles para entender bien qué necesitan los usuarios y el sistema.
+      </p>
+      <p>🖇️Si desea ver información más detalladada sobre las técnicas mencionadas, en el PDF siguiente se muestran con más profundidad.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/16TxAFwT2fPHjEJrYet24jTZlOiqxdPr8/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>
+      Debate de cierre de clase 7</h3>
+      <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+      <p>Le proponemos el siguiente foro de debate (obligatorio) a fin de construir conocimiento de manera colaborativa. Como disparador, proponemos la siguiente pregunta: <strong>¿Cuál es la tecnica de "elicitación" que usted utilizaria (según el contexto) y por qué?</strong></p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi participacion</h4>
+      <p>Yo elegiria hacer una observacion directa, sobre todo si se puede ver como la persona trabaja o usa el sistema en el dia a dia, ya que en algunos caso cuando uno entrevista a alguien, esa persona no siempre sabe explicar con claridad lo que se necesita o tal vez se le escapan cosas que hace de forma automatica, en cambio, si uno observa, puede que note detalles que no salen en una charla, ejemplo, si una persona pierde tiempo repitiendo un paso o si hace clic en muchos lados para llegar a lo que busca, eso te da una idea clara de por donde mejorar, me parece util cuando no se tiene mucha informacion o cuando se quiere ver la experiencia real del usuario</p>
+      <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 8 - Actividad Grupal e Individual",
+    imagen: imagenes.unidad8,
+    contenido: (
+    <>
+      <h3>
+        👥 Actividad Grupal - Trabajo de Investigación</h3>
+      
+      <p>
+        <h4><FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#792aa9ff' }} />Análisis de técnicas reales de elicitación de requerimientos</h4>
+        En esta actividad grupal analizamos un artículo académico que investiga cómo se usan las distintas técnicas de elicitación de requerimientos en el mundo real. El estudio se hizo con estudiantes de posgrado que trabajan en desarrollo de software, y muestra cuáles son las técnicas más usadas (como entrevistas, brainstorming y análisis de documentos) y de dónde se sacan los requerimientos (formularios, software previo, entrevistas, etc.).
+      </p>
+      <p>
+        Además, se comparan distintas formas de clasificar estas técnicas y se revisa qué tan frecuente es su uso en la práctica. Esto nos permitió no solo ver la teoría, sino entender cómo se aplican estas herramientas en proyectos reales, y qué desafíos aparecen según el contexto o la experiencia del equipo.
+      </p>
+      <p>🖇️ En el PDF que sigue detallamos lo que analizamos como grupo sobre este artículo.</p>
+      <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/14THA8mjjJKV8slwCQWZapu9qYjkaX24p/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>🧠 Trabajo Investigación – Propuesta de proceso de elicitación con enfoque en Design Thinking</h3>
+      <p>
+        En este trabajo individual analicé un artículo que aborda los problemas más comunes en la etapa de elicitación de requerimientos, como la falta de claridad en los procesos del negocio, la complejidad entre las partes involucradas y la poca transparencia en los sistemas.
+      </p>
+      <p>
+        El enfoque planteado propone aplicar un proceso basado en Design Thinking, dividido en tres pasos clave: empatizar, sintetizar e idear. Para validar la propuesta, los autores realizaron un focus group con expertos en el área, quienes destacaron especialmente el rol de la empatía como una herramienta valiosa para comprender mejor las necesidades del usuario.
+      </p>
+      <p>
+        Este proceso no solo busca mejorar la calidad de los requerimientos, sino también adaptarse a distintos contextos y evolucionar con el tiempo según la retroalimentación obtenida.
+      </p>
+      <p>
+        🖇️ Podés ver el PDF completo de la actividad reazlizada a continuación:
+      </p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1J_Kh3CSSqWjcZnuWMPF78eS1B1Kv_vJM/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <h3>
+      Debate de cierre de clase 7</h3>
+      <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+      <p>Le proponemos el siguiente foro de debate (obligatorio) a fin de construir conocimiento de manera colaborativa. Como disparador, proponemos la siguiente pregunta: <strong>¿Cuál es la tecnica de "elicitación" que usted utilizaria (según el contexto) y por qué?</strong></p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi participacion</h4>
+      <p>Yo elegiria hacer una observacion directa, sobre todo si se puede ver como la persona trabaja o usa el sistema en el dia a dia, ya que en algunos caso cuando uno entrevista a alguien, esa persona no siempre sabe explicar con claridad lo que se necesita o tal vez se le escapan cosas que hace de forma automatica, en cambio, si uno observa, puede que note detalles que no salen en una charla, ejemplo, si una persona pierde tiempo repitiendo un paso o si hace clic en muchos lados para llegar a lo que busca, eso te da una idea clara de por donde mejorar, me parece util cuando no se tiene mucha informacion o cuando se quiere ver la experiencia real del usuario</p>
+      <hr></hr>
+    </>
+    ),
+  },
+  
 ];
 
 
