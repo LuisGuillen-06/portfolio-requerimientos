@@ -1,17 +1,19 @@
 .unidad-card {
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px  #7139b6;
   margin: 20px;
   padding: 15px;
   max-width: 320px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .unidad-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(91, 19, 178, 0.723); /* sombra morada */
+  border: 3px solid #7139b6; /* borde morado */
 }
 
 .unidad-img {
