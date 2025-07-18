@@ -427,12 +427,66 @@ const unidades = [
         ></iframe>
       </div>
       <h3>
-      Debate de cierre de clase 7</h3>
-      <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
-      <p>Le proponemos el siguiente foro de debate (obligatorio) a fin de construir conocimiento de manera colaborativa. Como disparador, proponemos la siguiente pregunta: <strong>¿Cuál es la tecnica de "elicitación" que usted utilizaria (según el contexto) y por qué?</strong></p>
-      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
-      Mi participacion</h4>
-      <p>Yo elegiria hacer una observacion directa, sobre todo si se puede ver como la persona trabaja o usa el sistema en el dia a dia, ya que en algunos caso cuando uno entrevista a alguien, esa persona no siempre sabe explicar con claridad lo que se necesita o tal vez se le escapan cosas que hace de forma automatica, en cambio, si uno observa, puede que note detalles que no salen en una charla, ejemplo, si una persona pierde tiempo repitiendo un paso o si hace clic en muchos lados para llegar a lo que busca, eso te da una idea clara de por donde mejorar, me parece util cuando no se tiene mucha informacion o cuando se quiere ver la experiencia real del usuario</p>
+      🎙️ Entrega 2 – Stakeholders, Requisitos y Podcast: "Reservas al Futuro"</h3>
+      <p>En esta segunda entrega del trabajo grupal continuamos desarrollando el sistema de reservas para espacios de coworking. Retomamos el enunciado inicial para profundizar en la identificación de los principales <strong>stakeholders</strong>, sus <strong>motivaciones</strong> y <strong>características</strong>. También elaboramos un <strong>léxico específico</strong> y definimos reglas de negocio realistas para garantizar coherencia y claridad en el sistema.</p> <p>Como parte del trabajo práctico, grabamos el primer episodio del <strong>“Podcast del Ingeniero”</strong> titulado <em>“Reservas al Futuro – Diseñando espacios compartidos”</em>, donde compartimos el análisis, decisiones y aprendizajes del grupo en este proceso.</p> <p>
+      🎧 Escuchá el episodio aquí: <strong><em>Reservas al futuro – Entre líneas y Requisitos (Episodio 1)</em></strong></p>
+      <div className="pdf-container">
+        <iframe 
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/7tzcxkke0sMq7ehLMIah5Y?utm_source=generator"
+          width="100%" 
+          height="152" 
+          frameBorder="0" 
+          allowFullScreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy"
+          title="Podcast Reservas al Futuro"
+        ></iframe>
+      </div>
+
+       <p>📷 La imagen representativa del episodio fue creada con inteligencia artificial y muestra un entorno de coworking moderno, reflejando los valores de comunidad, tecnología y experiencia de usuario trabajados en este proyecto.</p>
+      <p>🖇️Si desea ver la información más detallada, en el PDF siguiente se mostrarán los temas con mayor profundidad.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1oBpj81HLUdQ9_xzHW4hn2Y5sR29M6RLS/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>🤖 Actividad: Conversación con IA - Proyecto Mercury S.A.</h3>
+
+      <p>
+        En esta actividad asumí el rol de <strong>Analista Funcional</strong> para la empresa <strong>Mercury S.A.</strong>, que busca desarrollar una aplicación móvil para que sus clientes puedan seguir en tiempo real sus pedidos, gestionar reclamos y evaluar el servicio recibido.
+      </p>
+
+      <p>
+        A través de una conversación simulada con el actor principal (Martín Ferraro, generado por IA), llevé adelante una entrevista completa con el objetivo de <strong>elicitación de requerimientos</strong>. Hice preguntas enfocadas en funcionalidades, usabilidad, accesos, métricas y experiencias esperadas por los usuarios.
+      </p>
+
+      <p>
+        Durante la charla, apliqué conceptos clave de la materia como <strong>requerimientos funcionales y no funcionales</strong>, técnicas de entrevista, identificación de prioridades del cliente, <strong>ambigüedades</strong> y detección de posibles <strong>conflictos entre deseos e implementaciones</strong>.
+      </p>
+
+      <p>
+        Esta experiencia me permitió poner en práctica no solo el contenido técnico de Ingeniería de Requerimientos, sino también habilidades blandas como <strong>escucha activa, empatía y claridad comunicacional</strong>.
+      </p>
+
+      <p>
+        🖇️En breve se podrá acceder al documento PDF de Informe de análisis de la entrevista
+      </p>
+
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1x5zCZzrvx4XNkTWvvJKIAbEzk9EVc42K/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
       <hr></hr>
     </>
     ),
