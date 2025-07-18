@@ -552,7 +552,7 @@ const Requerimientos = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Este trabajo forma parte del portafolio académico correspondiente al tercer año de la carrera <strong>Tecnicatura Superior en Análisis de Sistemas</strong>.
+          Este trabajo forma parte del portafolio académico correspondiente al 4 año de la carrera <strong>Ingeniería de Sistemas Informáticos</strong>.
         </motion.p>
 
         <motion.p
