@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-requerimientos/static/css/main.c3ccb54c.css",
-    "main.js": "/portfolio-requerimientos/static/js/main.0121fda8.js",
+    "main.css": "/portfolio-requerimientos/static/css/main.c519dac0.css",
+    "main.js": "/portfolio-requerimientos/static/js/main.4f44f257.js",
     "static/js/453.42c6db40.chunk.js": "/portfolio-requerimientos/static/js/453.42c6db40.chunk.js",
     "static/media/Unidad3.png": "/portfolio-requerimientos/static/media/Unidad3.f3f7ac91e81646189a23.png",
     "static/media/Unidad7.jpg": "/portfolio-requerimientos/static/media/Unidad7.e3a2a8b39546c2eb8bf9.jpg",
@@ -13,12 +13,12 @@
     "static/media/Unidad8.jpg": "/portfolio-requerimientos/static/media/Unidad8.5d8b9f008824b75a14d4.jpg",
     "static/media/Photo.jpg": "/portfolio-requerimientos/static/media/Photo.2c99f7d0c55b89d65355.jpg",
     "index.html": "/portfolio-requerimientos/index.html",
-    "main.c3ccb54c.css.map": "/portfolio-requerimientos/static/css/main.c3ccb54c.css.map",
-    "main.0121fda8.js.map": "/portfolio-requerimientos/static/js/main.0121fda8.js.map",
+    "main.c519dac0.css.map": "/portfolio-requerimientos/static/css/main.c519dac0.css.map",
+    "main.4f44f257.js.map": "/portfolio-requerimientos/static/js/main.4f44f257.js.map",
     "453.42c6db40.chunk.js.map": "/portfolio-requerimientos/static/js/453.42c6db40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3ccb54c.css",
-    "static/js/main.0121fda8.js"
+    "static/css/main.c519dac0.css",
+    "static/js/main.4f44f257.js"
   ]
 }
