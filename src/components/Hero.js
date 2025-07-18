@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero" id="inicio">
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="typewriter">Hola, soy <span className="highlight">Luis Felipe</span></h1>
+          <h1 className="typewriter">Hola, soy <span className="highlight">Luis Felipe Guillen</span></h1>
           <p className="subtext">
             Estudiante de Ingeniería en Sistemas, enfocado en <strong>desarrollo web</strong> y <strong>soluciones tecnológicas</strong>.
           </p>

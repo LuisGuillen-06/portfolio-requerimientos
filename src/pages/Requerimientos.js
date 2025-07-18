@@ -6,6 +6,7 @@ import Modal from '../components/Modal';
 import './Requerimientos.css';
 import { imagenes } from '../assets/multimedia';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 
 const unidades = [
   {
@@ -155,6 +156,7 @@ const unidades = [
       <p><strong>Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
 
       <p>🎥En el siguiente video vas a encontrar una presentación narrada que resume los principales puntos analizados.</p>
+      <hr className="linea-separadora" />
       <div className="flex justify-center my-6">
         <iframe 
           width="100%" 
@@ -513,11 +515,63 @@ const Requerimientos = () => {
     <>
       <NavBar />
       <main className="requerimientos-page">
-        <h1>Ingeniería de Requerimientos</h1>
-        <p>
+          <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+        >
+          Ingeniería de Requerimientos
+        </motion.h1>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           Bienvenido a la sección dedicada a los trabajos prácticos, investigaciones y actividades de la materia.
-        </p>
+        </motion.p>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Dentro de cada tarjeta vas a encontrar el contenido trabajado en clase: actividades, investigaciones, debates y otros aportes. 
+          Para ver el detalle de cada uno, hacé clic sobre la tarjeta correspondiente y se mostrará las actividades realizada de esa unidad.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          Materia dictada por la profesora <strong>Samela Marcela Rosalba</strong> en la <strong>Universidad Abierta Interamericana (UAI)</strong>.
+          </motion.p>
+          <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          Este trabajo forma parte del portafolio académico correspondiente al tercer año de la carrera <strong>Tecnicatura Superior en Análisis de Sistemas</strong>.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          Cada unidad refleja competencias adquiridas en temas como especificación de requerimientos, metodologías ágiles, casos de uso, documentación técnica, entre otros.
+        </motion.p>
+        <hr className="linea-separadora" />
+        
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 }}
+        >
+          Unidades del Curso
+        </motion.h2>
         <div className="tarjetas-unidades">
           {unidades.map((unidad, index) => (
             <UnidadCard

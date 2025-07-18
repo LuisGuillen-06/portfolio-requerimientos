@@ -6,20 +6,25 @@
 }
 
 .requerimientos-page h1 {
-color: #bb86fc;
-  margin-bottom: 0.5rem;
+  color: #bb86fc;
+  margin-bottom: 0.8rem;
   margin-top: 4rem;
   letter-spacing: 1.5px;
   font-weight: 600;
   text-shadow: 0 0 6px #bb86fc88;
-  font-size: 2.7rem;
+  font-size: 2.6rem;
 }
 
 .requerimientos-page p {
   font-size: 1.5rem;
-  margin-bottom: 2em;
   color: #d9cece;
+  max-width: 1200px;
+  margin: 0 auto 1.3em auto;
+  line-height: 1.4;
+  text-align: justify;
 }
+
+
 
 /* GRID de tarjetas */
 .tarjetas-unidades {
@@ -39,7 +44,7 @@ color: #bb86fc;
   box-shadow: 0 6px 25px rgba(187, 134, 252, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 30px;
-  max-width: 600px;
+  max-width: 550px;
   cursor: pointer;
   border: 2px solid #bb86fc33;
 }
@@ -83,3 +88,21 @@ color: #bb86fc;
   }
 }
 
+.linea-separadora {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #bb86fc, #9c27b0, #bb86fc);
+  margin: 1.5rem auto;
+  width: 80%;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.requerimientos-page h2 {
+  text-shadow: 0 0 6px #bb86fc88;
+  color: #bb86fc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
