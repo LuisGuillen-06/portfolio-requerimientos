@@ -493,7 +493,78 @@ const unidades = [
     </>
     ),
   },
-  
+  {
+    titulo: "Clase 9 - Especificación de los requerimientos",
+    imagen: imagenes.unidad7,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+        Especificaciónn de requerimientos de software (SRS)</h3>
+      
+      <p>
+        Durante esta clase estuvimos viendo la importancia de documentar correctamente los requerimientos de un sistema. En este caso, nos enfocamos en la SRS (Software Requirements Specification), que básicamente actúa como un contrato entre el cliente y el desarrollador. El documento sirve como guía para el diseño, testing y mantenimiento, y debe ser claro, completo y verificable.
+      </p>
+
+      <p>
+        La SRS tiene beneficios importantes: ayuda a reducir tiempos, a dejar todo por escrito desde el principio, y facilita futuras mejoras. Además, sirve para estimar con más precisión el tiempo y el costo del desarrollo.
+      </p>
+
+      <p>📚 Tipos de requerimientos:</p>
+      <ul className="list-disc list-inside pl-2">
+        <li><strong>Funcionales:</strong> lo que el sistema debe hacer.</li>
+        <li><strong>No funcionales:</strong> calidad, seguridad, disponibilidad, etc.</li>
+        <li><strong>De negocio:</strong> restricciones impuestas por el entorno empresarial.</li>
+      </ul>
+
+      <p>✅ Características de una buena SRS (según IEEE 830):</p>
+      <ul className="list-disc list-inside pl-2">
+        <li><strong>Correcta:</strong> cada requerimiento debe poder cumplirse.</li>
+        <li><strong>No ambigua:</strong> debe tener una única interpretación.</li>
+        <li><strong>Completa:</strong> incluye todas las entradas, salidas y respuestas.</li>
+        <li><strong>Consistente:</strong> sin conflictos entre requerimientos.</li>
+        <li><strong>Rankeada:</strong> por prioridad (esencial, condicional, opcional).</li>
+        <li><strong>Verificable:</strong> todo se debe poder comprobar.</li>
+        <li><strong>Modificable:</strong> fácil de actualizar sin romper nada.</li>
+        <li><strong>Rastreable:</strong> se debe poder ver el origen y destino de cada requerimiento.</li>
+      </ul>
+
+      <p>📦 Estructura típica (IEEE 830):</p>
+      <ul className="list-disc list-inside pl-2">
+        <li><strong>Introducción:</strong> propósito, alcance, definiciones.</li>
+        <li><strong>Descripción general:</strong> contexto, funciones, usuarios, restricciones.</li>
+        <li><strong>Requerimientos específicos:</strong> inputs, outputs, performance, atributos, etc.</li>
+      </ul>
+
+      <p>
+        Algo que me pareció clave es el tema de la <strong>rastreabilidad</strong>, porque nos permite hacer seguimiento hacia atrás (para saber de dónde viene un requerimiento) y hacia adelante (para ver qué parte del sistema lo implementa).
+      </p>
+
+      <p>
+        También se mencionó que en enfoques ágiles se prioriza mucho entender no solo qué hace el sistema, sino <strong>para qué</strong>, ya que eso conecta los requerimientos con los objetivos reales del negocio.
+      </p>
+      <p>🖇️Si desea ver información más detalladada sobre las técnicas mencionadas, en el PDF siguiente se muestran con más profundidad.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/16TxAFwT2fPHjEJrYet24jTZlOiqxdPr8/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>
+      Debate de cierre de clase 7</h3>
+      <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+      <p>Le proponemos el siguiente foro de debate (obligatorio) a fin de construir conocimiento de manera colaborativa. Como disparador, proponemos la siguiente pregunta: <strong>¿Cuál es la tecnica de "elicitación" que usted utilizaria (según el contexto) y por qué?</strong></p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi participacion</h4>
+      <p>Yo elegiria hacer una observacion directa, sobre todo si se puede ver como la persona trabaja o usa el sistema en el dia a dia, ya que en algunos caso cuando uno entrevista a alguien, esa persona no siempre sabe explicar con claridad lo que se necesita o tal vez se le escapan cosas que hace de forma automatica, en cambio, si uno observa, puede que note detalles que no salen en una charla, ejemplo, si una persona pierde tiempo repitiendo un paso o si hace clic en muchos lados para llegar a lo que busca, eso te da una idea clara de por donde mejorar, me parece util cuando no se tiene mucha informacion o cuando se quiere ver la experiencia real del usuario</p>
+      <hr></hr>
+    </>
+    ),
+  },
 ];
 
 
