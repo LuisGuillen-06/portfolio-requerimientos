@@ -495,7 +495,7 @@ const unidades = [
   },
   {
     titulo: "Clase 9 - Especificación de los requerimientos",
-    imagen: imagenes.unidad7,
+    imagen: imagenes.unidad9,
     contenido: (
     <>
       <h3>
@@ -543,10 +543,10 @@ const unidades = [
       <p>
         También se mencionó que en enfoques ágiles se prioriza mucho entender no solo qué hace el sistema, sino <strong>para qué</strong>, ya que eso conecta los requerimientos con los objetivos reales del negocio.
       </p>
-      <p>🖇️Si desea ver información más detalladada sobre las técnicas mencionadas, en el PDF siguiente se muestran con más profundidad.</p>
+      <p>🖇️En el siguiente PDF se muestran con más detalles sobre como se deberia construir un buen documento de <strong>Requisitos</strong> según el estandar IEEE 830.</p>
       <div className="pdf-container">
         <iframe
-          src="https://drive.google.com/file/d/16TxAFwT2fPHjEJrYet24jTZlOiqxdPr8/preview"
+          src="https://drive.google.com/file/d/1y8l9w9vlZTLSyNfsY1Sl1Ng9r5Zby3hV/preview"
           width="100%"
           height="500"
           allow="autoplay"
@@ -555,13 +555,473 @@ const unidades = [
       </div>
       <hr></hr>
       <h3>
-      Debate de cierre de clase 7</h3>
+      Debate de cierre de clase 9 - Ejercitación obligatoria</h3>
       <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
-      <p>Le proponemos el siguiente foro de debate (obligatorio) a fin de construir conocimiento de manera colaborativa. Como disparador, proponemos la siguiente pregunta: <strong>¿Cuál es la tecnica de "elicitación" que usted utilizaria (según el contexto) y por qué?</strong></p>
+      <p>Según su experiencia y/o relevamiento de la literatura, haga una contribucion a lo visto en los videos de teoria, indicando y describiendo: </p>
+      <ul className="list-disc list-inside pl-2">
+        <li>Caracteristicas que los requerimientos deben satisfacer</li>
+        <li>Justifique su elección</li>
+      </ul>
       <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
       Mi participacion</h4>
-      <p>Yo elegiria hacer una observacion directa, sobre todo si se puede ver como la persona trabaja o usa el sistema en el dia a dia, ya que en algunos caso cuando uno entrevista a alguien, esa persona no siempre sabe explicar con claridad lo que se necesita o tal vez se le escapan cosas que hace de forma automatica, en cambio, si uno observa, puede que note detalles que no salen en una charla, ejemplo, si una persona pierde tiempo repitiendo un paso o si hace clic en muchos lados para llegar a lo que busca, eso te da una idea clara de por donde mejorar, me parece util cuando no se tiene mucha informacion o cuando se quiere ver la experiencia real del usuario</p>
+      <p>Primero, que sean "claros y sin ambigüedades", ya que un requerimiento se puede interpretar de varias formas, es muy probable que el equipo termine implementando algo distinto a lo que el usuario realmente queria, por eso es importante usar un lenguaje entendible para todos los involucrados, sin tecnicismos innecesarios si no hacen falta, otra caracteristica clave es que sean "completos", o sea, que incluyan todos los casos posibles, tanto los escenarios normales como los errores o situaciones no esperadas. Muchas veces pasa que el cliente no piensa en todo y despues aparecen cosas que no estaban previstas, cuando eso sucede se generan retrasos, cambios de ultimo momento y confusión.</p>
+      <p>También me parece importante que los requerimientos esten "priorizados", ya que no todo lo que el cliente pide tiene el mismo nivel de urgencia, a veces se mezclan funciones esenciales con cosas que son más “lindas de tener” que necesarias, ponerle un orden a eso ayuda un monton a organizar el trabajo y evitar invertir tiempo en funcionalidades que pueden esperar o directamente no hacen falta.</p>
+      <p>Por ultimo, algo que no siempre se tiene en cuenta y para mí es fundamental, es que los requerimientos sean "realizables", ya que de nada sirve que esten bien escritos si despues no se pueden implementar con el tiempo, por falta de recursos o tecnologias disponibles, tiene que haber un equilibrio entre lo que se desea y lo que realmente se puede hacer.</p>
       <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 10 - Uso del Lenguaje Natural",
+    imagen: imagenes.unidad10,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+       Uso del Lenguaje Natural en Especificaciones</h3>
+      
+      <p> 📚
+        Durante esta clase entendimos la importancia del lenguaje natural al momento de especificar requerimientos. Aprendimos que aunque es el lenguaje más usado para comunicarnos, puede generar ambigüedades si no se utiliza de forma precisa. Vimos cómo distintas personas (desarrolladores, clientes, analistas) pueden interpretar una misma frase de manera diferente, dependiendo de su conocimiento previo, su contexto o el dominio en el que trabajan.
+      </p>
+
+      <p>
+        Un ejemplo claro fue cómo una misma palabra, como nieve, puede tener múltiples significados según quién la utilice o en qué situación. Eso demuestra que para poder especificar correctamente, es fundamental hablar el mismo lenguaje del cliente y conocer a fondo el dominio del problema.
+      </p>
+
+      <p>También vimos que el lenguaje evoluciona: pasamos de las señas, al lenguaje hablado, a la escritura. Esa evolución nos obliga a ser cada vez más claros y detallados al comunicar algo, especialmente si después ese conocimiento se traduce en código.</p>
+
+      <p>Nos mostraron conceptos clave como los falsos amigos (palabras que creemos entender pero significan otra cosa), el uso de la voz pasiva y activa, la importancia de los conectores y sinónimos dentro del contexto, y cómo una misma oración puede ser reescrita de forma más clara para evitar errores de interpretación. Todo esto nos sirve para poder escribir buenas especificaciones técnicas y evitar confusiones o pérdidas de información al momento de construir software.</p>
+      <hr></hr>
+      <h3>
+      <FontAwesomeIcon icon="tasks" style={{ marginRight: '8px', color: '#388e3c' }} />
+      Ejercitación obligatoria</h3>
+      <h4><FontAwesomeIcon icon="file-lines" className="text-blue-600" /> 1er Ensayo </h4>
+      <p>Indentifique algún término o expresión específica de un dominio del cual haya participado en el desarrollo de software, en donde el término o expresión tenía una definición precisa diferente del sentido común. </p>
+      <p>Por ejemplo, en derecho <strong>"resolver"</strong> es dejar sin efecto un negocio jurídico válido. Mientras que normalmente “resolver” es encontrar una solución o respuesta para un problema, una dificultad o una duda.</p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi Respuesta</h4>
+      <p>En el sistema web de congresos medicos en el que estoy trabajando, usamos bastante la palabra <strong>"superposición"</strong>, pero con un sentido muy especifico.</p>
+      <p>Normalmente, cuando uno piensa en "superposición", se imagina algo encima de otra cosa, pero en este caso, <strong>una superposición pasa cuando "dos actividades del congreso están cargadas en el mismo horario y en la misma sala, o también cuando un disertante aparece asignado a dos charlas distintas a la misma hora"</strong>, aunque sean en salas diferentes, esto genera un problema con la agenda del evento, por eso, desde el lado del desarrollo tuvimos que definir bien que es una superposición y tenerlo en cuenta en la lógica del sistema, especialmente para validar correctamente el cronograma cuando se cargan nuevas actividades.</p>
+      <hr></hr>
+      <h4><FontAwesomeIcon icon="file-lines" className="text-blue-600" /> 2do Ensayo </h4>
+      <p>Seleccione alguna especificación en lenguaje natural de alrededor de 10 líneas, la cual haya utilizado (ya sea porque la haya escrito o la tuvo que entender) y reescriba la misma a partir de las guias vistas en el video de estilos de redacción. </p>
+      <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+      Mi Respuesta</h4>
+      <h4>Especificación original (lenguaje natural, sin redacción técnica):</h4>
+      <p>Al momento de cargar una nueva actividad en el sistema del congreso, hay que revisar que no haya otra ya cargada en el mismo horario o en la misma sala, tambien se tiene que verificar que el disertante no esté ya asignado en otro evento en ese mismo horario. Si se da alguna de estas situaciones, deberia aparecer un mensaje que avise al usuario que hay una superposición y no dejar que se guarde la actividad hasta que se corrija.
+      </p>
+      <h4>Reescritura con un estilo más claro y técnico:</h4>
+      <p>El sistema debe validar que una nueva actividad no se superponga con actividades ya registradas. Se considera superposición si:</p>
+      <ol className="list-disc list-inside pl-2">
+        <li>Coincide la fecha, el horario y la sala con otra actividad existente.</li>
+        <li>El disertante ya está asignado en una actividad diferente en el mismo horario.</li>
+        <li>Si se detecta alguna superposición, el sistema debe:
+          <ul>
+            <li>Mostrar un mensaje de error al usuario indicando el conflicto.</li>
+            <li>Impedir el guardado de la nueva actividad hasta que se resuelva la situación</li>
+          </ul>
+        </li>
+      </ol>
+      <hr></hr>
+      <h4>Contenido adicional de la entrega</h4>
+
+      <p>Actualmente estoy participando en un proyecto real sobre un sistema web de gestión de congresos medicos, este trabajo me ayudo a darme cuenta de lo importante que es definir bien ciertos términos desde el principio, sobre todo cuando pueden tener distintos significados segun el contexto, tambien me sirvió para prestar mas atención a como estan redactadas las especificaciones, ya que eso influye mucho en como se interpreta y desarrolla cada funcionalidad</p>
+
+      <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 11 - Diccionario - Glosario - Ontolgía",
+    imagen: imagenes.unidad11,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+      Que son: Diccionario, Glosario y Ontología</h3>
+      
+      <p>
+       Durante esta clase aprendimos la diferencia entre tres conceptos clave a la hora de entender y modelar un dominio: el diccionario, el glosario y la ontología.
+      </p>
+
+      <ul className="list-disc list-inside pl-4 space-y-2">
+        <li><strong>Diccionario:</strong> Proporciona definiciones según el uso gramatical (verbo, sustantivo, etc.). Es más general y puede tener múltiples acepciones.</li>
+        <li><strong>Glosario:</strong> Aporta una definición específica y detallada dentro de un dominio particular. Ayuda a eliminar ambigüedad en términos técnicos.</li>
+        <li><strong>Ontología:</strong> Va más allá de definir términos: permite establecer relaciones entre conceptos usando un lenguaje formal, ideal para describir conocimiento estructurado.</li>
+      </ul>
+
+ 
+      <p>Después de entender estas diferencias, vimos cómo aplicar estos conceptos mediante el <strong>Léxico Extendido del Lenguaje (LEL)</strong>, una herramienta para describir símbolos del dominio con dos atributos principales:</p>
+      <ul className="list-disc list-inside pl-4 space-y-2">
+        <li><strong>Noción:</strong> Describe internamente al símbolo (¿qué es?, ¿quién es?).</li>
+        <li><strong>Impacto:</strong> Describe cómo se relaciona con otros símbolos, qué acciones hace o recibe.</li>
+      </ul>
+
+      <p>
+        Aprendimos a identificar si un símbolo es un <strong>sujeto</strong> (rol activo), un <strong>objeto</strong> (rol pasivo), una <strong>actividad</strong> (acción concreta), o un <strong>estado</strong> (situación en la que se encuentra algo).
+      </p>
+
+      <p>
+        También analizamos ejemplos concretos, como el “formulario”, el “depósito” o la “cabina de fotos”, entendiendo que no siempre un objeto es una cosa ni un sujeto es una persona; el rol que cumple depende del <em>impacto</em>.
+      </p>
+      <hr />
+
+      <h4>
+        <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#facc15' }} />
+        Reflexión personal
+      </h4>
+
+      <p>
+        Me pareció muy interesante cómo el LEL permite eliminar ambigüedades al momento de modelar. Muchas veces se usan términos sin acordar previamente su definición, y eso genera errores en el desarrollo. Tener una estructura como esta ayuda muchísimo a alinear el lenguaje entre usuarios, analistas y desarrolladores.
+      </p>
+
+      <p>📄 Además, se complementó la clase con un PDF explicativo y un video que aclara muy bien cada concepto.</p>
+      <hr></hr>
+      <h3>
+      <FontAwesomeIcon icon="tasks" style={{ marginRight: '8px', color: '#388e3c' }} />
+      Trabajo Práctico Grupal</h3>
+      <h4><FontAwesomeIcon icon="file-lines" className="text-blue-600" /> Contenido de las actividades </h4>
+      <p><strong>1) En función del estudio de caso que se encuentra a continuación sobre aplicación de LEL, presentar un informe que conste de</strong>:
+      <ul className="list-disc list-inside pl-4 space-y-2">
+        <li><strong>Introducción explicando el caso de estudio.</strong>.</li>
+        <li><strong>Ejemplos de al menos uno de cada símbolo visto en la clase de hoy y en el material.</strong></li>
+        <li><strong>Conclusiones sobre el caso relevado </strong>.</li>
+      </ul>
+      <p>📄 En el siguiente docuemnto se visualiza el caso de estudio que se abordó</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1UQBrncREuoZqqDDUUANTk1lm5BIeQ2fZ/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      </p>
+      <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+      <p><FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#792aa9ff' }} />Podés ver el PDF completo de la actividad Gupal realizada a continuación:</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1Sx2xFJsjdaCJqmIA3-V7aGtPdH2_B_h8/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <p><strong>2) Buscar en sitios pertinentes como Google Académico, Dialnet, Redalic, Latindex, un caso de aplicación de utilización de LEL. Agregar la denominación del trabajo, el archivo visible y el link.Presentar una breve descripción del trabajo seleccionado.</strong></p>
+
+      <p>
+      En esta investigación que realizamos en grupo, trabajamos sobre la construcción colaborativa de un Léxico Extendido del Lenguaje (LEL), una herramienta clave dentro de la ingeniería de software, ya que permite identificar y organizar el vocabulario específico de un determinado dominio. A partir de esto, analizamos el funcionamiento de LELTool, una aplicación web desarrollada para facilitar esta tarea en equipo. Esta herramienta permite definir símbolos importantes del dominio (como palabras o frases) y relacionarlos mediante nociones e impactos, lo cual mejora la comunicación entre los distintos actores del proyecto. Además, incorpora funciones útiles como comentarios, opiniones de los usuarios y tareas de refactorización para mantener coherencia. Por último, se evaluó su usabilidad y se comprobó que LELTool resulta más eficiente que el uso de editores de texto tradicionales para este tipo de trabajo colaborativo.
+      </p>
+      <p><FontAwesomeIcon icon="book" style={{ marginRight: '8px', color: '#792aa9ff' }} />A continuación, podrás ver el trabajo de investigación que decidimos abordar.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1aSs9JBAU7iHmn36Lu-8e2xJY8uS3nR0X/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 12 - Validación",
+    imagen: imagenes.unidad12,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+       Validación de los Requerimientos</h3>
+      
+      <p> 🔎 
+        En esta clase vimos por qué es tan importante validar los requerimientos antes de avanzar con el desarrollo. No alcanza con que estén bien escritos o parezcan coherentes: <strong>hay que asegurarse de que representen realmente lo que el usuario necesita.</strong>
+      </p>
+
+      <p>
+        A veces el usuario cree que sabe la solución, pero en realidad <strong>lo que tiene que plantear es el problema</strong>, y nosotros, como analistas o ingenieros, debemos entenderlo y traducirlo correctamente en un modelo.
+      </p>
+
+      <p>También vimos que esperar a <strong>validar al final del desarrollo es un error común y costoso</strong>. Cuanto antes detectemos un problema, mejor.</p>
+
+      <p>🧩Se mencionaron errores frecuentes como:</p>
+      <ul className="list-disc list-inside pl-2">
+        <li><strong>Contradicciones internas</strong></li>
+        <li><strong>Ambigüedades por uso del lenguaje natural</strong></li>
+        <li><strong>Inconsistencias con el dominio del problema </strong>.</li>
+        <li><strong>Información innecesaria (falta de minimalidad)</strong></li>
+        <li><strong>Incompletitud</strong></li>
+        <li><strong>Redundancias</strong></li>
+      </ul>
+      <p>Para evitar estos problemas, se pueden usar herramientas como <strong>prototipos, animaciones o paráfrasis</strong>, que ayudan a que el usuario entienda lo que se está construyendo y confirme si vamos por buen camino.</p>
+      <p>La validación no es una tarea estructurada ni con una fórmula mágica. <strong>Es un trabajo en equipo entre analistas y usuarios</strong>, y es clave para que el producto final cumpla con su objetivo.</p>
+      <p>En la siguiente imagen podemos observar cómo los requerimientos pueden ser entendidos dependiendo del usuario.</p>
+      <img   
+      src={imagenes.imgValidacion} 
+      alt="Validación" 
+      className="imagen-validacion"/>
+      <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 13 - User Stories, Use Cases y Scenarios",
+    imagen: imagenes.Unidad13,
+    contenido: (
+      <>
+        <h3>
+          <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+          Historias de Usuario, Casos de Uso y Escenarios
+        </h3>
+
+        <p>
+          Durante esta clase aprendimos a trabajar con tres herramientas clave para la especificación de requerimientos: las <strong>Historias de Usuario</strong>, los <strong>Casos de Uso</strong> y los <strong>Escenarios</strong>. 
+        </p>
+
+        <p>
+          Empezamos viendo cómo tradicionalmente se especificaban los requerimientos desde el sistema, con frases como "El sistema debe...". Pero luego, se pasó a una mirada desde el rol del usuario: "El usuario debe...", lo cual permite entender mejor qué espera lograr el usuario.
+        </p>
+
+        <h4><FontAwesomeIcon icon="book" style={{ marginRight: '6px', color: '#4caf50' }} /> Escenarios</h4>
+        <p>
+          Los escenarios nos permiten representar diferentes variantes de una misma acción. Por ejemplo, el proceso de facturación cambia según el tipo de cliente. Vimos que los escenarios pueden representarse en distintos formatos, como texto o gráficamente.
+        </p>
+
+        <p>
+          También se planteó que los escenarios tienen una estructura que incluye un <strong>inicio, recorrido (episodio) y objetivo</strong>, y que esta forma narrativa ayuda a reducir malentendidos entre usuarios y desarrolladores.
+        </p>
+
+        <h4><FontAwesomeIcon icon="list-ul" style={{ marginRight: '6px', color: '#0277bd' }} /> Historias de Usuario</h4>
+        <p>
+          Las historias de usuario se usan mucho en metodologías ágiles. Se enfocan en documentar lo justo y necesario, con plantillas simples que permiten entender el objetivo detrás de cada requerimiento.
+        </p>
+
+        <p>
+          Vimos que las historias pueden complementarse con <strong>criterios de aceptación</strong>, <strong>mockups</strong> y distintos niveles de detalle como <em>epics</em>, <em>themes</em> y <em>tasks</em>.
+        </p>
+
+        <h4><FontAwesomeIcon icon="project-diagram" style={{ marginRight: '6px', color: '#f57c00' }} /> Casos de Uso</h4>
+        <p>
+          Los casos de uso son útiles en proyectos más grandes o con más documentación. Nos ayudan a definir el límite del sistema, las interacciones con los actores y los flujos de información. También pueden ser gráficos o estar acompañados por plantillas más detalladas.
+        </p>
+
+        <p>
+          La versión detallada de un caso de uso permite documentar mejor las interacciones entre el usuario y el sistema, algo clave en proyectos complejos.
+        </p>
+
+        <p>
+          A lo largo de la clase analizamos ejemplos visuales y realizamos actividades prácticas con distintos dominios para ejercitar el uso de estos tres tipos de artefactos.
+        </p>
+        <hr />
+        <h3>
+          👥 Ejercitación obligatoria Grupal</h3>
+        
+        <p> En esta actividad grupal trabajamos sobre la especificación de requerimientos mediante la construcción de <strong>escenarios</strong>, una técnica útil para representar distintos caminos posibles que puede recorrer un usuario dentro de un sistema. A partir de un caso general (comprar productos), elaboramos un escenario base, un escenario que detalla un episodio específico del flujo, y dos variantes alternativas del mismo. Esta ejercitación nos permitió aplicar conceptos vistos en clase como: flujo principal, objetivos, actores, recursos, y variantes del comportamiento, consolidando así el uso práctico de esta técnica de especificación. </p>
+        <p>🖇️ En el PDF a continuación, se detalla el criterio de evaluación y el desarrollo de la actividad</p>
+        <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+        <div className="pdf-container">
+          <iframe
+            src="https://drive.google.com/file/d/15ghItEKylIzWWY-pF0-nVS6nO_n1m-uk/preview"
+            width="100%"
+            height="500"
+            allow="autoplay"
+            title="PDF Actividad Unidad 1"
+          ></iframe>
+        </div>
+        <hr></hr>
+        <h3>
+          👥 Ejercitación obligatoria Grupal - En función del TP de la cursada</h3>
+        
+        <p> En esta actividad se abordó la especificación de requerimientos a partir de un caso práctico, aplicando distintas técnicas vistas durante la cursada. A partir del desarrollo de un proyecto propio —un sistema de reservas para espacios de coworking—, se elaboraron distintos casos de uso, historias de usuario y escenarios. Cada uno de estos artefactos permitió representar diferentes formas de entender y documentar las necesidades del sistema, tanto desde el punto de vista funcional como desde la experiencia del usuario. Esta ejercitación sirvió como instancia integradora para consolidar los conocimientos adquiridos sobre modelado de requerimientos y comunicación efectiva con los futuros usuarios o stakeholders del sistema. </p>
+        <p>🖇️ En el PDF a continuación, se detalla el desarrollo de la actividad</p>
+        <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+        <div className="pdf-container">
+          <iframe
+            src="https://drive.google.com/file/d/1pFsnX3Oc6uEW6CGEAC0j4BjIzmOQwGa_/preview"
+            width="100%"
+            height="500"
+            allow="autoplay"
+            title="PDF Actividad Unidad 1"
+          ></iframe>
+        </div>
+        <hr></hr>
+        <h3>
+        Foro de debate de la clase 13</h3>
+        <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+        <p>Busque información sobre alguno de los siguienes elementos y comparta en el foro (no más de 10 líneas): </p>
+        <ul className="list-disc list-inside pl-2">
+        <li>Themes</li>
+        <li>Epicas</li>
+        <li>Criterios de aceptación</li>
+        <li>Mockups</li>
+        </ul>
+        <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+        Mi participacion</h4>
+        <h4>Mockups</h4>
+        <p>Son como una maqueta del sistema, una especie de imagen estatica que muestra como se veria una pantalla antes de desarrollarla, sirven para tener una idea mas clara de lo que quiere el usuario, sin la necesidad de programar nada todavia, se suelen usar junto a las historias de usuario y ayudan mucho a evitar malentendidos, ya que todos ven lo mismo. Sirve para chequear si lo que tenes en mente va en la direccion correcta con lo que el usuario necesita.</p>
+        <h4>Atributo de Caso de Uso (Prioridad)</h4>
+        <p>La prioridad nos indica que tan importante o urgente es un caso de uso en relacion con otros, permite organizar el trabajo del equipo y saber que desarrollar primero, por ejemplo, si un caso de uso es esencial para que el sistema funcione, tendra prioridad alta, tambien es útil cuando hay pocos recursos o tiempo y hay que decidir por donde arrancar.</p>
+        <hr></hr>
+      </>
+    ),
+  },
+
+  {
+    titulo: "Clase 14 - Gestión de Requerimientos",
+    imagen: imagenes.Unidad14,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+        Importancia y fundamentos de la gestión de requerimientos
+      </h3>
+      
+      <p> 🔎 
+        En esta clase vimos que gestionar los requerimientos no es solo levantarlos y especificarlos, sino que es un proceso que dura todo el proyecto. La gestión implica planear, organizar, controlar y administrar los requerimientos para asegurarnos que todos estén claros, actualizados y alineados con el desarrollo.
+      </p>
+
+      <p>
+       Nos preguntamos cosas clave como: ¿quién es responsable de cada requerimiento? ¿quién puede modificarlo? ¿qué pasa si cambio uno, qué otros se afectan? o ¿cómo verifico que un requerimiento se implementó bien?
+      </p>
+
+      <p>Aprendimos que en proyectos chicos con pocos requerimientos quizás no sea tan complejo, pero en proyectos grandes o críticos (como sistemas de aviación o trenes) la gestión es vital para evitar errores costosos o peligrosos.</p>
+      <p>También conocimos el proyecto REAIMS, que se enfoca en mejorar la ingeniería de requerimientos para sistemas críticos donde los fallos pueden ser catastróficos. Ahí se destaca la importancia de integrar la seguridad y confiabilidad desde el inicio.</p>
+      <p>Finalmente, repasamos un conjunto de guías para manejar bien los requerimientos, desde lo básico hasta temas avanzados, y la importancia de priorizar qué requerimientos se van a incluir primero, porque no siempre se pueden hacer todos juntos por limitaciones de tiempo y recursos.</p>
+
+      <hr></hr>
+       <h3>
+        Debate de cierre</h3>
+        <h4><FontAwesomeIcon icon="comments" style={{ marginRight: '8px', color: '#0277bd' }} />Tema de debate</h4>
+        <p>Lo invitamos a participar en el foro de cierre de la clase 14, a partir de la siguiente pregunta disparadora: ¿Cree usted que el proceso de gestión de requerimientos debe hacerse siempre que se aborde el desarrollo de un sistema informático? ¿cuál es su relación con la calidad del producto? </p>
+        <h4> <FontAwesomeIcon icon="lightbulb" style={{ marginRight: '6px', color: '#fbc02d' }} />
+        Respuesta al debate:</h4>
+        
+        <p>Yo creo que la gestión de requerimientos debería hacerse siempre que se empieza a desarrollar un sistema, sin importar si es un proyecto grande o chico. A veces parece que es mucho lío para proyectos simples, pero tener claro desde el principio qué hay que hacer, quién lo hace y cómo se manejan los cambios evita muchos dolores de cabeza después.</p>
+
+        <p>Esta gestión está súper relacionada con la calidad del producto, porque si no definís bien lo que se necesita y no controlás bien los cambios, al final terminás con un sistema que no funciona como el usuario espera, o con errores que cuestan un montón arreglar.</p>
+        <p>Además, cuando se gestiona bien, se evitan malentendidos, contradicciones y confusiones que son comunes cuando no hay orden con los requerimientos. Así que para mí, es clave para que el producto final sea bueno, útil y que la gente quede conforme.</p>
+        <hr></hr>
+    </>
+    ),
+  },
+  {
+    titulo: "Clase 15 - Actividad Conversación con la IA",
+    imagen: imagenes.Unidad15,
+    contenido: (
+    <>
+      <h3>
+        🤖 Conversación con IA
+      </h3>
+      
+      <p> En esta actividad me puse en el rol de analista funcional para una empresa que está desarrollando una aplicación móvil para mejorar la gestión de pedidos y el seguimiento en tiempo real. A través de una entrevista con un miembro importante del equipo, fui recabando los requerimientos que necesita el sistema para funcionar bien.
+      </p>
+
+      <p>
+      La idea fue entender qué necesita cada usuario, identificar qué funciones son clave y cuáles restricciones o expectativas hay. También me enfoqué en hacer preguntas claras y adaptarme a la forma de hablar de la persona para poder obtener toda la información necesaria.
+      </p>
+
+      <p>Después, ordené y clasifiqué esos requerimientos para tener un panorama claro de qué debe incluir el sistema y así facilitar su desarrollo.</p>
+
+      <p>Si querés ver en detalle todos los tipos de requerimientos que identifiqué durante la entrevista, podés consultar el documento que adjunto en formato PDF.</p>
+    
+      <div className="pdf-container">
+          <iframe
+            src="https://drive.google.com/file/d/1b9TOPTpBFiwRKtWSxOFzI-4Eq8DQJgBV/preview"
+            width="100%"
+            height="500"
+            allow="autoplay"
+            title="PDF Actividad Unidad 1"
+          ></iframe>
+        </div>
+      <hr></hr>
+  
+    </>
+    ),
+  },
+  {
+    titulo: "Entrega Final - Podcast",
+    imagen: imagenes.Unidad16,
+    contenido: (
+    <>
+      <h3>
+        <FontAwesomeIcon icon="file-lines" style={{ marginRight: '8px', color: '#792aa9ff' }} />
+         Cierre de la cursada y entrega final
+      </h3>
+
+      <p>
+      ¡Lo logramos! En esta última entrega resumimos todo lo aprendido en la materia Ingeniería de Requerimientos: desde la elicitación y el análisis, pasando por la especificación y validación, hasta la gestión y priorización de requisitos. Fue un proceso en el que no solo aplicamos los conceptos teóricos, sino que también aprendimos a trabajar de forma colaborativa, organizarnos y apoyarnos como equipo.
+      </p>
+      <p>
+        Queremos agradecer especialmente a la profesora <strong>Samela Marcela Rosalba</strong> por su dedicación, paciencia y acompañamiento durante toda la cursada. Sus devoluciones y observaciones nos ayudaron a mejorar en cada entrega, y a entender la importancia de cada etapa del proceso.
+      </p>
+      <p>
+        También quiero aprovechar este cierre para agradecer a mis compañeros y compañeras del grupo, con quienes compartimos ideas, resolvimos desafíos y nos apoyamos mutuamente durante todo el trabajo. Sin ese compromiso colectivo, este proyecto no hubiera sido posible.
+      </p>
+      <p>
+        <strong>👥 Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillén Márquez, Luciana Belén Impollino, Esteban Regueira.
+      </p>
+      <p>
+        Si querés ver el trabajo completo con todos los tipos de requerimientos, podés consultar el documento adjunto en formato PDF.
+      </p>
+
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/18T-tisCIbKMw-hCqccHYW7X-MpuIwn9y/preview"
+          width="100%"
+          height="600"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h3>Podcast - <em>Entre líneas y Requerimientos (Episodio 2)</em></h3>
+      <p><img 
+      src={imagenes.imgPodcast} 
+      alt="Validación" 
+      className="imagen-Podcast"/>
+      </p>
+      <p>La imagen fue seleccionada para representar una escena típica de una reunión de trabajo, correspondiente a la etapa de elicitación dentro de la Ingeniería de Requerimientos. En esta fase se recopila información directamente de los stakeholders a través de una comunicación activa, utilizando técnicas como entrevistas y lluvias de ideas. Lo que queríamos transmitir con esta imagen es el clima de colaboración y discusión, algo clave en este proceso iterativo que busca comprender, documentar y validar las necesidades reales de quienes participan en el proyecto.</p>
+      <hr></hr>
+      <p>
+        <strong>🎧 Escuchá el episodio aquí:</strong>
+      </p>
+      <div className="pdf-container">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/2iEY1B0yCQ3yyBI7XKfhKV?utm_source=generator"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          title="Podcast El Ingeniero – Entre líneas y Requerimientos"
+        ></iframe>
+      </div>
+      <hr></hr>
+      <h4>Guion del Podcast</h4>
+
+      <p>🖇️ En el siguiente PDF puedes visualizar el guión que desarrollamos durante el podcast</p>
+        
+      <p><strong>👥Integrantes del grupo 8:</strong> Lara Belaitx Candia, Micaela Corbellini, Luis Felipe Guillen Marquez, Luciana Belén Impollino, Esteban Regueira.</p>
+      <div className="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/17Jfvew8tmToB9Yd_UekMX6Pj12by7A-h/preview"
+          width="100%"
+          height="500"
+          allow="autoplay"
+          title="PDF Actividad Unidad 1"
+        ></iframe>
+      </div>
+    
+
+
+      <hr></hr>
+  
     </>
     ),
   },

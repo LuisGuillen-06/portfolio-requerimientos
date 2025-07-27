@@ -117,3 +117,23 @@ ul.list-disc li {
   margin-bottom: 0.5rem;
   margin-left: 1.5rem;
 }
+
+ol.list-disc li {
+  margin-bottom: 0.3rem;
+  margin-left: 1.9rem;
+}
+.imagen-validacion {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-Podcast {
+  display: block;
+  margin: 20px auto;
+  max-width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
