@@ -1105,12 +1105,20 @@ const Requerimientos = () => {
         </motion.h2>
         <div className="tarjetas-unidades">
           {unidades.map((unidad, index) => (
+            <motion.div
+            key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.25, ease: 'easeOut' }}
+            >
             <UnidadCard
               key={index}
               titulo={unidad.titulo}
               imagen={unidad.imagen}
               onClick={() => abrirModal(unidad)}
             />
+            </motion.div>
           ))}
         </div>
       </main>
@@ -1125,7 +1133,7 @@ const Requerimientos = () => {
       />
 
       <footer>
-        <p>© 2025 Luis Felipe Guillén Márquez - Portfolio académico</p>
+        <p>© 2025 Luis Felipe Guillén Márquez - Portfolio Académico</p>
       </footer>
     </>
   );

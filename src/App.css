@@ -54,11 +54,15 @@ section {
 footer {
   text-align: center;
   padding: 2rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #888;
   border-top: 1px solid #524e4e;
   margin-top: 4rem;
   
+}
+
+footer::hover {
+  background-color: aqua;
 }
 
 
@@ -107,4 +111,21 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.linea-separadora {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, #8046c6, #9c27b0, #bb86fc);
+  margin: 1rem auto;
+  width: 70%;
+  border-radius: 5px;
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+}
+
+.linea-separadora:hover {
+  opacity: 1;
+  width: 80%;
+  height: 2px;
 }

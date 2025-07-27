@@ -21,18 +21,17 @@ function HomePage() {
         <section id="Hero" className="Hero">
           <Hero />
         </section>
-
+        <hr className='linea-separadora'></hr>
         <section id="About" className="about-section">
           <About />
         </section>
-
+        <hr className='linea-separadora'></hr>
         <section id="Contact">
           <Contact />
         </section>
       </main>
-
       <footer>
-        <p>© 2025 Luis Felipe Guillén Márquez - Portfolio académico</p>
+        <p>© 2025 Luis Felipe Guillén Márquez - Portfolio Académico</p>
       </footer>
     </>
   );

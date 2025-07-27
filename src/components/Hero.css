@@ -3,12 +3,10 @@
   padding-right: 2rem;
   padding-bottom: 0;  /* menos espacio abajo */
   padding-left: 2rem;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e0e0e0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .hero-content {

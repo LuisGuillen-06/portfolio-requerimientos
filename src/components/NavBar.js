@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <h1 className="logo">LuisF.Dev</h1>
+      <h1 className="logo">LuisF. QA|Dev</h1>
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         <span className="bar"></span>
         <span className="bar"></span>
